@@ -1,13 +1,12 @@
-/* Definições Globais */
+/* Estilo global */
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-ul {
+.tabs ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -16,122 +15,31 @@ ul {
     background-color: #333;
 }
 
-li.tab {
+.tabs li.tab {
     padding: 15px 30px;
     cursor: pointer;
     text-align: center;
-    transition: background-color 0.3s ease;
     color: white;
+    transition: background-color 0.3s ease;
 }
 
-li.tab:hover {
+.tabs li.tab:hover {
     background-color: #555;
 }
 
-li.active {
+.tabs li.active {
     background-color: #007bff;
 }
 
 .content {
-    display: none;
+    display: none; /* Oculta o conteúdo por padrão */
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: #fff;
     margin: 20px;
     border-radius: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-button:focus {
-    outline: none;
-}
-
-form {
-    margin-top: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    width: auto;
-    margin-top: 10px;
-}
-
-/* Estilo da lista de itens */
-ul li {
-    background-color: #2d2d2d;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-ul li .control-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-ul li .control-buttons button {
-    background-color: #e67e22;
-}
-
-ul li .control-buttons button:hover {
-    background-color: #d35400;
-}
-
-ul li .quantidade {
-    font-weight: bold;
-}
-
-/* Estilo dos botões */
-.quantidade-btn, .editar-btn, .excluir-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.quantidade-btn:hover, .editar-btn:hover, .excluir-btn:hover {
-    background-color: #0056b3;
-}
-
-.novo-comentario-btn {
-    background-color: #27ae60;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.novo-comentario-btn:hover {
-    background-color: #2ecc71;
+/* Mostrar a aba ativa */
+.content.show {
+    display: block; /* Exibe a aba quando a classe "show" é adicionada */
 }
