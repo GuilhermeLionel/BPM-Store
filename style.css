@@ -1,48 +1,137 @@
-/* Estilo básico */
+/* Definições Globais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Container principal */
-  .container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo das abas */
-  .tabs {
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  .tab-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
+    justify-content: center;
+    background-color: #333;
+}
+
+li.tab {
+    padding: 15px 30px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .tab-button:hover {
-    background-color: #45a049;
-  }
-  
-  .content {
+    text-align: center;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+li.tab:hover {
+    background-color: #555;
+}
+
+li.active {
+    background-color: #007bff;
+}
+
+.content {
     display: none;
-  }
-  
-  #estoqueContent {
-    display: block;
-  }
-  
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: auto;
+    margin-top: 10px;
+}
+
+/* Estilo da lista de itens */
+ul li {
+    background-color: #2d2d2d;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+ul li .control-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+ul li .control-buttons button {
+    background-color: #e67e22;
+}
+
+ul li .control-buttons button:hover {
+    background-color: #d35400;
+}
+
+ul li .quantidade {
+    font-weight: bold;
+}
+
+/* Estilo dos botões */
+.quantidade-btn, .editar-btn, .excluir-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quantidade-btn:hover, .editar-btn:hover, .excluir-btn:hover {
+    background-color: #0056b3;
+}
+
+.novo-comentario-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.novo-comentario-btn:hover {
+    background-color: #2ecc71;
+}
